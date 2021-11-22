@@ -4,9 +4,10 @@
 
 ## Write a short comment describing this function
 ## The function :
-## 1. Creates the x_inverse variable
-## 2. Stores it and the matrix x in its environment
-## 3. Defines functions for:
+## 1. Takes as input an invertible matrix 
+## 2. Creates the x_inverse variable
+## 3. Stores it and the matrix x in its environment
+## 4. Defines functions for:
 ##    a) getting the value of the matrix from its environment
 ##    b) calculating the inverse of the matrix and assigning it to the x_inverse 
 ##       variable
@@ -27,10 +28,11 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## The function :
-## 1. Evaluates whether the x_inverse of the makeCacheMatrix function is in the 
+## 1. Takes as input x the output of the function makeCacheMatrix 
+## 2. Evaluates whether the x_inverse of the makeCacheMatrix function is in the 
 ##    its environment
-## 2a: if the x_inverse value is in the cache this value is returned
-## 2b: if x_inverse is not in the function environment of makeCacheMatrix
+## 3a: if the x_inverse value is in the cache this value is returned
+## 3b: if x_inverse is not in the function environment of makeCacheMatrix
 ##     it is calculated and using the setinverse function from makeCacheMatrix,
 ##     which stores it in its function environment 
 
